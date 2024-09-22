@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>project form</title>
+</head>
+<body>
+  <div id="form">
+    <!-- email label starts here -->
+  <label for="email">Email</label>
+  <input type="email" id="email" name="email" placeholder="email.." value=" test@example.com" required autofocus>
+  <br><br>
+  <!-- password label start here -->
+  <label for="pwd">Password</label>
+  <input type="Password" id="pwd" name="pwd" placeholder="password.." required maxlength="6">
+  <br><br>
+  <!-- name label starts here -->
+  <label for="fname">First Name:</label>
+  <input type="text" id="fname" name="fname" placeholder="firts name.." required maxlength="25">
+  <label for="lname"> Last Name:</label>
+  <input type="text" id="lname" name="lname" placeholder="last name.." required maxlength="25"x>
+  <br><br>
+  <!-- cateogory slot starts here -->
+  <label>Cateogory</label>
+  <select name="slot" required>
+    <option value="student">student</option>
+    <option value="employee">employee</option>
+    <option value="freelancer" selected>freelancer</option>
+  </select>
+  <br><br>
+  <!-- date label starts here -->
+  <label for="edate">Event date</label>
+  <input type="date" name="edate" required>
+  <br><br>
+  <!-- ticket radio starts here -->
+  <label >Ticket 1</label>
+  <input type="radio" name="rtickets" required >
+    <label for="rtickets">Ticket 2</label>
+  <input type="radio" name="rtickets" required checked> 
+   <label for="rtickets">Ticket 3</label>
+  <input type="radio" name="rtickets" required>
+  <br><br>
+  <!-- online payment check box starts here -->
+<label for="pay">Online payment</label>
+<input type="checkbox" name="pay" required>
+<br><br>
+<!-- notes starts here -->
+<label>Notes</label><br>
+<textarea name="comments" id="address" style="height: 50px; width: 300px;" placeholder="notes.."></textarea>
+<!-- submit button -->
+<br>
+<input type="submit" name="submit" onclick="alert('regestered')">
+</div>
+<style>
+  body
+  {
+    background-color: black;
+  }
+  form{
+    color: white;
+  }
+  label{
+    color: white;
+  }
+</style>
+</body>
+</html>
